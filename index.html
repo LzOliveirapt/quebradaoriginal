@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quebrada Original - Estilo e Cultura Urbana">
     <title>QUEBRADA ORIGINAL</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <div class="body_items">
         <div class="item_1">
-            <img src="imagem/3.jpg" alt="">
+            <img src="src/images/3/3.jpg" alt="Background principal">
         </div>
         <div class="item_2">
-            <img src="imagens/logo.png" alt="">
+            <img src="src/images/assets/logo.png" alt="Logo secundário">
         </div>
         <div class="just_do_it">
             <p>100%
-               Da 
-               Quebrada 
-            </p>
+                Da 
+                Quebrada 
+             </p>
         </div>
     </div>    
     <div class="container">
         <nav>
             <div class="left_nav">
                 <div class="nav_logo">
-                    <img src="images/logo.png" alt="">
+                    <img src="src/images/assets/logo.png" alt="Logo Quebrada Original">
                 </div>
                 <div class="nav_menu">
                     <ul>
@@ -51,13 +52,13 @@
             </div>
             <div class="right_nav">
                 <div class="nav_cart_box">
-                    <i class="bx bx-cart"></i>
+                    <i class="bx bx-cart" data-cart-icon data-cart-count="0"></i>
                 </div>
                 <div class="dropdown">
                     <div class="menu_bars" onclick="myMenuFunction()">
                         <div class="menu_bars_btn">
-                          <img src="images/bar.png" class="bar_1">
-                          <img src="images/bar.png" class="bar_2">
+                          <img src="src/images/assets/bar.png" class="bar_1" alt="Menu icon">
+                          <img src="src/images/assets/bar.png" class="bar_2" alt="Menu icon">
                         </div>
                         <div class="nav_dropdown_menu" id="navDropdownMenu">
                            <ul>
@@ -95,61 +96,46 @@
                     <p>Estilo e Cultura, atitude de quem faz acontecer. A verdadeira essência do urbano em cada detalhe.</p>
                 </div>
                 <div class="cart">
-                    <button class="cart_btn">Adicione ao carrinho</button>
+                    <button class="cart_btn" data-add-to-cart data-variant-id="gid://shopify/ProductVariant/1">Adicione ao carrinho</button>
                     <p class="price">89.99€</p>
                 </div>
 
                 <div class="shop_box">
                     <div class="shop_item_container">
                         <div class="shoe_img_box">
-                             <img src="images/armani.png" class="shoe_img">
+                             <img src="src/images/assets/armani.png" class="shoe_img" alt="Blusa Empori Armani">
                         </div>
                         <div class="shoe_name_price">
                              <h3>Blusa Empori Armani</h3>
                              <p>89€</p>
                         </div>
-                        <div class="add_to_shop">
+                        <div class="add_to_shop" data-add-to-cart data-variant-id="gid://shopify/ProductVariant/2">
                             <i class="bx bx-cart"></i>
                         </div>
                     </div>
                     <div class="shop_item_container">
                         <div class="shoe_img_box">
-                             <img src="images/blusafrionike.png" class="shoe_img">
+                             <img src="src/images/assets/blusafrionike.png" class="shoe_img" alt="Blusa De Frio Nike">
                         </div>
                         <div class="shoe_name_price">
                              <h3>Blusa De Frio Nike</h3>
                              <p>€89,99€</p>
                         </div>
-                        <div class="add_to_shop">
+                        <div class="add_to_shop" data-add-to-cart data-variant-id="gid://shopify/ProductVariant/3">
                             <i class="bx bx-cart"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="right_col">
-                <img src="images/brasil_personalizada-removebg-preview.png" class="featured_img" alt="">
+                <img src="src/images/assets/brasil_personalizada-removebg-preview.png" class="featured_img" alt="Camisa Brasil Personalizada">
                 <div class="shopping_cart_btn">
-                    <i class="bx bx-cart"></i>
+                    <i class="bx bx-cart" data-cart-icon data-cart-count="0"></i>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <script>
-        
-
-    function myMenuFunction() {
-        var i = document.getElementById("navDropdownMenu");
-
-          if(i.className === "nav_dropdown_menu") {
-               i.className += " responsive";
-          } else {
-               i.className = "nav_dropdown_menu";
-          }
-   }
-      
-     </script>
-     
+    <script src="src/js/script.js"></script>
 </body>
 </html>
