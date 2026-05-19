@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEBRADA ORIGINAL</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body_items">
+        <div class="item_1">
+            <img src="imagem/3.jpg" alt="">
+        </div>
+        <div class="item_2">
+            <img src="imagens/logo.png" alt="">
+        </div>
+        <div class="just_do_it">
+            <p>100%
+               Da 
+               Quebrada 
+            </p>
+        </div>
+    </div>    
+    <div class="container">
+        <nav>
+            <div class="left_nav">
+                <div class="nav_logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="nav_menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="link">HOME</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Joias</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Roupas</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Oculos</a>
+                            <div class="link_border"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_nav">
+                <div class="nav_cart_box">
+                    <i class="bx bx-cart"></i>
+                </div>
+                <div class="dropdown">
+                    <div class="menu_bars" onclick="myMenuFunction()">
+                        <div class="menu_bars_btn">
+                          <img src="images/bar.png" class="bar_1">
+                          <img src="images/bar.png" class="bar_2">
+                        </div>
+                        <div class="nav_dropdown_menu" id="navDropdownMenu">
+                           <ul>
+                             <li>
+                                 <a href="#" class="link">HOME</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Joias</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Roupas</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Oculos</a>
+                                 <div class="link_border"></div>
+                             </li>
+                           </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="left_col">
+                <div class="shoe_title">
+                    <p>QUEBRADA ORIGINAL</p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="shoe_description">
+                    <p>Estilo e Cultura, atitude de quem faz acontecer. A verdadeira essência do urbano em cada detalhe.</p>
+                </div>
+                <div class="cart">
+                    <button class="cart_btn">Adicione ao carrinho</button>
+                    <p class="price">89.99€</p>
+                </div>
+
+                <div class="shop_box">
+                    <div class="shop_item_container">
+                        <div class="shoe_img_box">
+                             <img src="images/armani.png" class="shoe_img">
+                        </div>
+                        <div class="shoe_name_price">
+                             <h3>Blusa Empori Armani</h3>
+                             <p>89€</p>
+                        </div>
+                        <div class="add_to_shop">
+                            <i class="bx bx-cart"></i>
+                        </div>
+                    </div>
+                    <div class="shop_item_container">
+                        <div class="shoe_img_box">
+                             <img src="images/blusafrionike.png" class="shoe_img">
+                        </div>
+                        <div class="shoe_name_price">
+                             <h3>Blusa De Frio Nike</h3>
+                             <p>€89,99€</p>
+                        </div>
+                        <div class="add_to_shop">
+                            <i class="bx bx-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_col">
+                <img src="images/brasil_personalizada-removebg-preview.png" class="featured_img" alt="">
+                <div class="shopping_cart_btn">
+                    <i class="bx bx-cart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        
+
+    function myMenuFunction() {
+        var i = document.getElementById("navDropdownMenu");
+
+          if(i.className === "nav_dropdown_menu") {
+               i.className += " responsive";
+          } else {
+               i.className = "nav_dropdown_menu";
+          }
+   }
+      
+     </script>
+     
+</body>
+</html>
